@@ -1,0 +1,89 @@
+{
+ "title": "The least functional dependence at negative footrule: the lower boundary of the region of Chatterjee's rank correlation and Spearman's footrule",
+ "upload_type": "publication",
+ "publication_type": "preprint",
+ "description": "<p><strong>Unrefereed research candidate.</strong> Chatterjee's rank correlation &xi; measures how nearly one continuous variable is a function of another (0 under independence, 1 for an exact functional relationship of any shape). Spearman's footrule &psi; measures how close the two sets of ranks are (1 for identical rankings, 0 under independence, down to &minus;1/2). The exact region of the pair, the set of values (&xi;, &psi;) that can occur together, gives every sharp inequality between the two coefficients.</p><p><strong>What was known.</strong> Rockel (J. Comput. Appl. Math. 485, 117466, 2026) determined the region except its curved lower edge: the upper edge &psi; = &radic;&xi;, the corner at footrule &minus;1/2 (least &xi; = 1/2, attained only by a checkerboard copula), the region for stochastically increasing copulas, and |&psi;| &le; &radic;&xi; for every copula. For a footrule strictly between &minus;1/2 and 0 the least possible &xi; was open; he gave a lower bound and a numerically close two-parameter family.</p><p><strong>Results.</strong> For every footrule strictly between &minus;1/2 and 0 the least value of &xi; is attained by exactly one copula, constructed explicitly: given independent uniforms U and T, the response takes one of two levels according to whether U lies below a threshold r<sub>k</sub>(T), and the threshold solves a linear integral equation with a triangular kernel. A dual (supporting-line) inequality proves optimality over all copulas, and a quadratic stability estimate shows that nearly optimal copulas are close to the extremiser. The boundary has an elementary closed form for &psi; &le; &minus;0.4565&hellip;, a finite piecewise-elementary evaluation elsewhere, and explicit expansions at both ends; for example &xi; + 2&psi; &ge; &minus;0.6042071&hellip; for every copula. This completes the attainable region, and every attainable pair has a radially symmetric representative. Under positive or negative quadrant dependence the full regions are determined: at zero footrule the attainable values of &xi; are [0, 1/2) and [0, 3/4) respectively, and neither supremum is attained. For stochastically decreasing copulas the lower edge is the same curve, &psi; = 0 forces independence, and every pair with &xi; &le; &minus;2&psi; above the curve is attained; that &xi; &le; &minus;2&psi; is the exact upper edge is stated as a conjecture, supported by numerical search, not proved. The construction extends to transport problems with nonuniform margins and several displacement terms.</p><p><strong>Limits.</strong> Population coefficients of continuous variables only, not sample estimates. Closed form only for &psi; &le; &minus;0.4565&hellip;; elsewhere the table values are double-precision computations cross-checked by independent methods, not interval-certified. Rockel's earlier family was already numerically close (&minus;0.193 against the exact &minus;0.1932281&hellip; for &xi; + &psi;); the advance is the exact value, the proof of optimality, the unique extremiser and stability.</p><p><strong>Contents.</strong> The paper (LaTeX source and PDF, with figure), Python scripts (NumPy, SciPy; Matplotlib for the figure) that evaluate the boundary three ways, minimise the objective independently over checkerboard copulas, check the two-predictor extension, compute the table and probe the stochastically decreasing conjecture, with their recorded outputs; plus the bibliography, a machine-readable index, a research-gate record, a review summary, a replay receipt and SHA-256 sums. Every check raises an error on failure, also under python -O.</p><p><strong>Assurance.</strong> Written proofs; the computations test formulae and implementation and are not part of any proof. Internal AI-assisted review only: a combined five-role Claude review panel, one revision round with a bounded extension, a verification re-review, a proof audit of the new and rewritten proofs, and clean replays with a negative control. No Astra/Codex review took place. This is not peer review, independent reproduction or formal verification. Creator: Anonymous. Text CC0-1.0; code MIT.</p>",
+ "creators": [
+  {
+   "name": "Anonymous"
+  }
+ ],
+ "access_right": "open",
+ "license": "cc-zero",
+ "version": "0.1.0-candidate",
+ "publication_date": "2026-11-25",
+ "keywords": [
+  "Chatterjee's rank correlation",
+  "Spearman's footrule",
+  "exact region",
+  "copula",
+  "functional dependence",
+  "optimal transport",
+  "stochastically decreasing",
+  "quadrant dependence",
+  "rank correlation inequalities"
+ ],
+ "notes": "Code (*.py, run_all.sh and the CI workflow) is MIT; prose, manuscript, figure, recorded outputs and records are CC0-1.0.",
+ "related_identifiers": [
+  {
+   "identifier": "https://github.com/ipitchford/chatterjee-footrule-lower-boundary/tree/v0.1.0-candidate",
+   "relation": "isSupplementTo",
+   "scheme": "url"
+  },
+  {
+   "identifier": "https://evidencepress.org/releases/chatterjee-footrule-lower-boundary/",
+   "relation": "isDocumentedBy",
+   "scheme": "url"
+  },
+  {
+   "identifier": "10.1016/j.jmva.2026.105630",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1080/01621459.2020.1758115",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1002/cpa.21707",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1111/j.1467-9469.2011.00767.x",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1007/978-94-017-0061-0_10",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1016/j.jfa.2017.08.015",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1016/j.cam.2026.117466",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "arXiv:2608.20176",
+   "relation": "references",
+   "scheme": "arxiv"
+  },
+  {
+   "identifier": "arXiv:2606.30033",
+   "relation": "references",
+   "scheme": "arxiv"
+  },
+  {
+   "identifier": "arXiv:2509.07232",
+   "relation": "references",
+   "scheme": "arxiv"
+  }
+ ]
+}

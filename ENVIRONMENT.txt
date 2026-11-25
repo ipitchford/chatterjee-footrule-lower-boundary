@@ -1,0 +1,18 @@
+Release replay environment (25 November 2026, macOS arm64 host)
+Command (cwd = package root, fresh copy of the approved candidate):
+  PYTHON="uv run --no-project --python 3.12 --with numpy==2.3.5 --with scipy==1.17.0 --with matplotlib==3.10.8 python3" sh code/run_all.sh
+Interpreter and packages (printed inside the run, not assumed): CPython 3.12.11 (uv-managed), NumPy 2.3.5, SciPy 1.17.0,
+Matplotlib 3.10.8. Platform macOS-27.2.1-arm64. OMP_NUM_THREADS=1, OPENBLAS_NUM_THREADS=1, PYTHONDONTWRITEBYTECODE=1.
+Flags: every check runs as python3 -I -B -O (run_all.sh); the figure script as python3 -E -s -B.
+Run time on the release host: 46 s for run_all.sh.
+GitHub CI: ubuntu-latest, actions/setup-python 3.12, pip install -r requirements.txt. One job: manifest, run_all.sh in a
+copy, comparison with results/, a negative control, working tree unchanged.
+Comparison policy (declared before tagging; the same in CI, README.md and REPLAY_RECEIPT.md):
+- results/table.json, results/verification.csv, results/finite-modes-check.csv: same structure and text outside
+  numbers, every number within 1e-9 absolute;
+- results/two-predictors.txt (iterative grid optimisation; six decimals quoted in the paper): within 1e-6 absolute;
+- results/sd_probe.json (local vertex search; vertex values may differ in the last digits): the run raises no error and
+  max_over_lam_ge_2 <= 1e-12;
+- the regenerated figure is not compared byte for byte; interpreter and library versions are not part of the outputs.
+On the release platform all five result files were byte-identical to the recorded ones and the regenerated PNG figure
+was byte-identical; the regenerated PDF figure differs in bytes (font subsetting) and renders identically at 100 dpi.

@@ -1,0 +1,234 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 25 November 2026 for 0.1.0-candidate from the dated searches of the internal AI-assisted review and the lead (24 November 2026), the source reading record, the corpus overlap check, refs.bib, REVIEW_SUMMARY.md and the paper's own positioning (Sections 1 and 10). It records scrutiny performed, not historical priority.",
+ "contributionMap": [
+  {
+   "claim": "For every footrule in (-1/2, 0), the least population Chatterjee coefficient is attained by exactly one copula C_k (threshold solving a linear integral equation with a triangular kernel), with a dual certificate over all copulas and a quadratic stability estimate; this completes the exact (xi, psi) region",
+   "unit": "statement",
+   "paperLocation": "Theorem 1, Sections 2-5",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "arXiv listings up to 24 November 2026 (footrule; Chatterjee's rank correlation; \"exact region\"; author Rockel); the Semantic Scholar citation graph of arXiv:2509.07232 (four citing works, all read); the published JCAM version of Rockel's paper; Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "exact region Chatterjee xi Spearman footrule; lower boundary minimise xi + mu psi; Chatterjee rank correlation footrule inequality; works citing Rockel arXiv:2509.07232; au:Rockel"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (Rockel arXiv v1 and the published JCAM version; Ansari-Rockel arXiv:2608.20176 and arXiv:2506.15897; Orenday Lares-Rockel arXiv:2606.30033; the other citing works arXiv:2603.09768 and arXiv:2601.07993)",
+     "query": "Rockel JCAM Theorems 2.1, 2.2, 3.1, 3.2, 3.3, Proposition 2/3, Corollary 2, eq. (16), Remark 2(e), Table 2; Ansari-Rockel optimal-transport dual construction and Bertino lower edge (Example 3.1); Orenday Lares-Rockel Corollary 4.3 (radial and PQD regions for xi and beta)"
+    }
+   ],
+   "closestPriorWork": "Rockel (JCAM 485, 117466, 2026): upper edge, corner at -1/2, SI region, convexity and closedness, SD attainment of the lower edge, |psi| <= sqrt(xi); lower edge left open (eq. (16)), with a Jensen lower bound and a near-optimal two-parameter family",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "the open arc, its unique extremisers, certificate and stability were not found in the searched sources; the rest of the region is Rockel's, credited"
+  },
+  {
+   "claim": "Closed form for psi <= -0.4565437..., finite piecewise-exponential evaluation otherwise, endpoint expansions; xi + 2 psi >= -0.6042071... for every copula",
+   "unit": "statement",
+   "paperLocation": "Proposition 3, Theorem 1 text, Table 1",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "arXiv listings up to 24 November 2026 (footrule; Chatterjee's rank correlation; \"exact region\"; author Rockel); the Semantic Scholar citation graph of arXiv:2509.07232 (four citing works, all read); the published JCAM version of Rockel's paper; Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "exact region Chatterjee xi Spearman footrule; lower boundary minimise xi + mu psi; Chatterjee rank correlation footrule inequality; works citing Rockel arXiv:2509.07232; au:Rockel"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (Rockel arXiv v1 and the published JCAM version; Ansari-Rockel arXiv:2608.20176 and arXiv:2506.15897; Orenday Lares-Rockel arXiv:2606.30033; the other citing works arXiv:2603.09768 and arXiv:2601.07993)",
+     "query": "Rockel JCAM Theorems 2.1, 2.2, 3.1, 3.2, 3.3, Proposition 2/3, Corollary 2, eq. (16), Remark 2(e), Table 2; Ansari-Rockel optimal-transport dual construction and Bertino lower edge (Example 3.1); Orenday Lares-Rockel Corollary 4.3 (radial and PQD regions for xi and beta)"
+    }
+   ],
+   "closestPriorWork": "Rockel Table 2 (family value -0.193 for xi + psi; exact -0.1932281...)",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "exact values new; the earlier family was numerically close, as the paper states"
+  },
+  {
+   "claim": "Radial representatives for every pair; full PQD and NQD regions, with zero-footrule sections [0, 1/2) and [0, 3/4), neither attained",
+   "unit": "statement",
+   "paperLocation": "Corollary 4, Lemma 5, Theorem 6, Proposition 7",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "arXiv listings up to 24 November 2026 (footrule; Chatterjee's rank correlation; \"exact region\"; author Rockel); the Semantic Scholar citation graph of arXiv:2509.07232 (four citing works, all read); the published JCAM version of Rockel's paper; Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "exact region Chatterjee xi Spearman footrule; lower boundary minimise xi + mu psi; Chatterjee rank correlation footrule inequality; works citing Rockel arXiv:2509.07232; au:Rockel"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (Rockel arXiv v1 and the published JCAM version; Ansari-Rockel arXiv:2608.20176 and arXiv:2506.15897; Orenday Lares-Rockel arXiv:2606.30033; the other citing works arXiv:2603.09768 and arXiv:2601.07993)",
+     "query": "Rockel JCAM Theorems 2.1, 2.2, 3.1, 3.2, 3.3, Proposition 2/3, Corollary 2, eq. (16), Remark 2(e), Table 2; Ansari-Rockel optimal-transport dual construction and Bertino lower edge (Example 3.1); Orenday Lares-Rockel Corollary 4.3 (radial and PQD regions for xi and beta)"
+    }
+   ],
+   "closestPriorWork": "Orenday Lares-Rockel arXiv:2606.30033 (the analogous radial and PQD results for xi and beta, where the zero section is the whole interval); Bertino copula (Fredricks-Nelsen; Ansari-Rockel for the rho-footrule lower edge)",
+   "verdict": "partially-known-cited",
+   "verdictNote": "the structural parallel is credited; the footrule zero-section results are new in the searched sources"
+  },
+  {
+   "claim": "Stochastically decreasing copulas: psi <= 0 with equality only for independence; same lower edge; every pair with m(y) <= x <= -2y attained; upper edge xi <= -2 psi conjectured",
+   "unit": "statement",
+   "paperLocation": "Proposition 8, Conjecture 9",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "arXiv listings up to 24 November 2026 (footrule; Chatterjee's rank correlation; \"exact region\"; author Rockel); the Semantic Scholar citation graph of arXiv:2509.07232 (four citing works, all read); the published JCAM version of Rockel's paper; Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "exact region Chatterjee xi Spearman footrule; lower boundary minimise xi + mu psi; Chatterjee rank correlation footrule inequality; works citing Rockel arXiv:2509.07232; au:Rockel"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (Rockel arXiv v1 and the published JCAM version; Ansari-Rockel arXiv:2608.20176 and arXiv:2506.15897; Orenday Lares-Rockel arXiv:2606.30033; the other citing works arXiv:2603.09768 and arXiv:2601.07993)",
+     "query": "Rockel JCAM Theorems 2.1, 2.2, 3.1, 3.2, 3.3, Proposition 2/3, Corollary 2, eq. (16), Remark 2(e), Table 2; Ansari-Rockel optimal-transport dual construction and Bertino lower edge (Example 3.1); Orenday Lares-Rockel Corollary 4.3 (radial and PQD regions for xi and beta)"
+    }
+   ],
+   "closestPriorWork": "Rockel Remark 2(e) (the SD region needs the exact lower edge); Rockel SI region",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "partial answer to Rockel's remark; the upper edge is a conjecture with numerical evidence, not a claim"
+  },
+  {
+   "claim": "Transport extensions to nonuniform margins and several displacement terms",
+   "unit": "statement",
+   "paperLocation": "Theorems 10 and 11, Section 8",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "arXiv listings up to 24 November 2026 (footrule; Chatterjee's rank correlation; \"exact region\"; author Rockel); the Semantic Scholar citation graph of arXiv:2509.07232 (four citing works, all read); the published JCAM version of Rockel's paper; Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "exact region Chatterjee xi Spearman footrule; lower boundary minimise xi + mu psi; Chatterjee rank correlation footrule inequality; works citing Rockel arXiv:2509.07232; au:Rockel"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (Rockel arXiv v1 and the published JCAM version; Ansari-Rockel arXiv:2608.20176 and arXiv:2506.15897; Orenday Lares-Rockel arXiv:2606.30033; the other citing works arXiv:2603.09768 and arXiv:2601.07993)",
+     "query": "Rockel JCAM Theorems 2.1, 2.2, 3.1, 3.2, 3.3, Proposition 2/3, Corollary 2, eq. (16), Remark 2(e), Table 2; Ansari-Rockel optimal-transport dual construction and Bertino lower edge (Example 3.1); Orenday Lares-Rockel Corollary 4.3 (radial and PQD regions for xi and beta)"
+    }
+   ],
+   "closestPriorWork": "Chiappori-McCann-Pass (multi-to-one-dimensional transport, smooth costs); Gozlan-Roberto-Samson-Tetali (general transport costs)",
+   "verdict": "partially-known-cited",
+   "verdictNote": "general frameworks credited; the explicit one-dimensional construction for kinked payoffs was not found"
+  },
+  {
+   "claim": "Method: rewriting xi through conditional quantiles makes xi + 2k psi linear, a transport problem from the square to the interval with a two-piece affine payoff; supporting-line (dual) certificate; uniformity of the output becomes a linear integral equation with a triangular kernel",
+   "unit": "method",
+   "paperLocation": "Sections 3-4",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "arXiv listings up to 24 November 2026 (footrule; Chatterjee's rank correlation; \"exact region\"; author Rockel); the Semantic Scholar citation graph of arXiv:2509.07232 (four citing works, all read); the published JCAM version of Rockel's paper; Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "exact region Chatterjee xi Spearman footrule; lower boundary minimise xi + mu psi; Chatterjee rank correlation footrule inequality; works citing Rockel arXiv:2509.07232; au:Rockel"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (Rockel arXiv v1 and the published JCAM version; Ansari-Rockel arXiv:2608.20176 and arXiv:2506.15897; Orenday Lares-Rockel arXiv:2606.30033; the other citing works arXiv:2603.09768 and arXiv:2601.07993)",
+     "query": "Rockel JCAM Theorems 2.1, 2.2, 3.1, 3.2, 3.3, Proposition 2/3, Corollary 2, eq. (16), Remark 2(e), Table 2; Ansari-Rockel optimal-transport dual construction and Bertino lower edge (Example 3.1); Orenday Lares-Rockel Corollary 4.3 (radial and PQD regions for xi and beta)"
+    }
+   ],
+   "closestPriorWork": "Chiappori-McCann-Pass; Gozlan et al. (duality for costs depending on conditional laws); Ansari-Rockel arXiv:2608.20176 (optimal-transport dual construction for rho and footrule)",
+   "verdict": "partially-known-cited",
+   "verdictNote": "the paper states that neither the triangular kernel nor the supporting-line inequality is new as an object; their combination into an exact solution of this problem was not found"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Rockel, M. (2026), On the exact region between Chatterjee's rank correlation and Spearman's footrule, J. Comput. Appl. Math. 485, 117466 (arXiv:2509.07232)",
+   "usedFor": "known parts of the region; open eq. (16); Jensen bound; family values; Remark 2(e)",
+   "readWhat": "whole paper, arXiv v1 and published version",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1016/j.cam.2026.117466"
+  },
+  {
+   "citation": "Ansari, J. and Rockel, M. (2026), arXiv:2608.20176",
+   "usedFor": "optimal-transport dual construction; Bertino lower edge",
+   "readWhat": "whole paper",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://arxiv.org/abs/2608.20176"
+  },
+  {
+   "citation": "Ansari, J. and Rockel, M. (2026), J. Multivariate Anal. 214, 105630 (arXiv:2506.15897)",
+   "usedFor": "exact region for xi and rho (context)",
+   "readWhat": "whole paper (arXiv version)",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1016/j.jmva.2026.105630"
+  },
+  {
+   "citation": "Orenday Lares, J. I. and Rockel, M. (2026), arXiv:2606.30033",
+   "usedFor": "radial and PQD parallels for xi and beta",
+   "readWhat": "whole paper",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://arxiv.org/abs/2606.30033"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "Closed form only for psi <= -0.4565...; table values are double-precision, not interval-certified",
+   "closingQuestion": "Can the finite-mode system be certified with interval arithmetic?",
+   "triedOrSearched": "three independent evaluations agree (closed form, finite modes, midpoint solver; differences below 1e-6)",
+   "estimatedCost": "days",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Section 10",
+   "whyNotClosedNow": "a separate certification project; stated as open"
+  },
+  {
+   "limitation": "Upper edge of the stochastically decreasing region not proved (Conjecture 9)",
+   "closingQuestion": "Is xi <= -2 psi for every SD copula?",
+   "triedOrSearched": "two proof routes tried and shown insufficient (SI flip via Rockel's bound; splitting the range); exact-checkerboard vertex search found no counterexample",
+   "estimatedCost": "weeks",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Conjecture 9, Section 7",
+   "whyNotClosedNow": "research-level"
+  },
+  {
+   "limitation": "Clean inequality xi >= psi^2 + |psi|^3/2 not proved",
+   "closingQuestion": "Does the ratio observation hold for all copulas with psi <= 0?",
+   "triedOrSearched": "ratio computed along the curve for k in [0.05, 2000]: from 0.528 to 1.999, nondecreasing",
+   "estimatedCost": "weeks",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Section 10",
+   "whyNotClosedNow": "reported only as an observation"
+  },
+  {
+   "limitation": "Population coefficients only",
+   "closingQuestion": "How do the bounds transfer to sample estimates?",
+   "triedOrSearched": "stated in Sections 9 and 10",
+   "estimatedCost": "weeks",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "needs sampling theory for xi_n and the footrule",
+   "whyNotClosedNow": "outside scope"
+  },
+  {
+   "limitation": "Checks vanished under python -O; no pinned environment",
+   "closingQuestion": "Do all checks raise under -O with pinned packages?",
+   "triedOrSearched": "asserts replaced by raises; requirements.txt; run_all.sh under -O; negative control exits 1",
+   "estimatedCost": "hours",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Novelty rests on searches of limited scope",
+   "closingQuestion": "Would further indexes change attribution?",
+   "triedOrSearched": "arXiv listings, the citation graph of Rockel's preprint and the cited sources; a general Semantic Scholar relevance query was rate-limited",
+   "estimatedCost": "subscription indexes",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "general indexes outside the citation graph were outside the searched corpus",
+   "whyNotClosedNow": "recorded here; the paper positions its results against the sources read"
+  }
+ ],
+ "extensionScout": {
+  "by": "the internal review panel and the lead",
+  "date": "2026-11-24",
+  "proposals": [
+   "the exact region for stochastically decreasing copulas",
+   "the clean inequality xi >= psi^2 + |psi|^3/2",
+   "interval-certified tables",
+   "finite-sample remarks and a motivated vector-predictor section"
+  ],
+  "actions": [
+   "done in part: Proposition 8; upper edge stated as Conjecture 9",
+   "not done: reported as an observation",
+   "not done: stated as open",
+   "done: population-only remark and motivation for Section 8"
+  ]
+ }
+}

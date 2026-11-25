@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it using these metadata."
+type: software
+title: "The least functional dependence at negative footrule: the lower boundary of the region of Chatterjee's rank correlation and Spearman's footrule"
+abstract: "Unrefereed research candidate. For every Spearman footrule value strictly between -1/2 and 0, the least possible population value of Chatterjee's rank correlation is determined, together with the unique copula that attains it and a dual certificate valid for all copulas; this completes the exact region of the pair begun by Rockel. For example xi + 2 psi >= -0.6042071 for every copula. The regions under radial symmetry and positive or negative quadrant dependence are also determined; for stochastically decreasing copulas the lower edge is the same curve and the upper edge xi <= -2 psi is stated as a conjecture."
+authors:
+  - name: "Anonymous"
+version: "0.1.0-candidate"
+date-released: "2026-11-25"
+doi: "10.5281/zenodo.24538662"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24538662"
+    description: "This version"
+  - type: doi
+    value: "10.5281/zenodo.24538661"
+    description: "All versions (concept DOI)"
+repository-code: "https://github.com/ipitchford/chatterjee-footrule-lower-boundary"
+url: "https://evidencepress.org/releases/chatterjee-footrule-lower-boundary/"
+license: CC0-1.0
+keywords:
+  - "Chatterjee's rank correlation"
+  - "Spearman's footrule"
+  - exact region
+  - copula
+  - optimal transport
+preferred-citation:
+  type: article
+  title: "The least functional dependence at negative footrule: the lower boundary of the region of Chatterjee's rank correlation and Spearman's footrule"
+  authors:
+    - name: "Anonymous"
+  year: 2026
+  doi: "10.5281/zenodo.24538662"
+  publisher:
+    name: "Zenodo"
+  notes: "Version 0.1.0-candidate; unrefereed"

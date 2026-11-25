@@ -1,0 +1,4 @@
+# Tested with CPython 3.12.11 (uv-managed) on macOS arm64
+numpy==2.3.5
+scipy==1.17.0   # >= 1.12 required for scipy.optimize.isotonic_regression
+matplotlib==3.10.8   # figure only

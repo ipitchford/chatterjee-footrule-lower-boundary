@@ -1,0 +1,44 @@
+# SPDX-License-Identifier: MIT
+name: Replay
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+  OMP_NUM_THREADS: "1"
+  OPENBLAS_NUM_THREADS: "1"
+jobs:
+  replay:
+    name: Manifest; run_all.sh (every check under python -O); comparison under the declared policy; negative control
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check MANIFEST.sha256
+        run: sha256sum -c MANIFEST.sha256
+      - name: Install the pinned packages
+        run: python3 -m pip install --disable-pip-version-check -r requirements.txt
+      - name: Regenerate every result file in a copy of the package (cwd = package root)
+        run: |
+          python3 -I -c 'import sys, numpy, scipy, matplotlib; print(sys.version); print(numpy.__version__, scipy.__version__, matplotlib.__version__)'
+          for d in run neg1; do mkdir -p "$RUNNER_TEMP/$d"; cp -R code results figures requirements.txt "$RUNNER_TEMP/$d/"; done
+          cd "$RUNNER_TEMP/run" && sh code/run_all.sh
+      - name: Compare with the recorded results
+        # Declared policy (also in README.md, ENVIRONMENT.txt and REPLAY_RECEIPT.md): table.json, verification.csv and
+        # finite-modes-check.csv numbers within 1e-9 absolute; two-predictors.txt within 1e-6 absolute; text outside
+        # numbers identical; sd_probe.json: no error and max_over_lam_ge_2 <= 1e-12.
+        run: python3 -I .github/ci/compare_output.py "$RUNNER_TEMP/run/results" results
+      - name: Negative control under -O (block-family formula 1 - l^2 changed to 1 - l^2/2)
+        run: |
+          cd "$RUNNER_TEMP/neg1"
+          sed -i 's/if abs(xi-(1-l\*l)) > 2e-3/if abs(xi-(1-l*l\/2)) > 2e-3/' code/boundary_table.py
+          grep -q 'abs(xi-(1-l\*l/2))' code/boundary_table.py
+          if python3 -I -B -O code/boundary_table.py --output neg.json > out.txt 2>&1; then echo "wrong value not detected"; exit 1; fi
+          grep -q 'ArithmeticError: block family mismatch' out.txt
+          echo "negative control detected"
+      - name: Working tree unchanged
+        run: test -z "$(git status --porcelain)"
